@@ -27,7 +27,7 @@ public class UserController {
     public String get(User user) {
 
         User u=userService.getNameById(user);
-        redisUtils.set("xur","miss");
+        redisUtils.set("xur","miss2");
         return u.toString();
     }
 
